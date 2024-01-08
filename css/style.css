@@ -1,59 +1,305 @@
-html {
-    background-color: #212529;
-}
+/*--------
+Font
+----------*/
+@font-face {
+    font-family: 'Gambarino';
+    src: url('../webfonts/Gambarino-Regular.woff2');
+  }
+  
+  /*--------
+  Global
+  ----------*/
+  :root {
+    --black: #212529;
+    --gold: #998330;
+    --white: #FAFAFA;
+  }
+  
+  ::selection {
+      color: var(--gold);
+      background: var(--black);
+  }
+  
+  h1 {
+      font-weight: 400;
+      line-height: 1.2; /* 60px */
+      font-size: 3.125em; /* 50px in em */
+  }
+  
+  a {
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  body {
+      margin: 0;
+      font-family: 'Gambarino', serif;
+      background-color: var(--black);
+      font-optical-sizing: auto;
+      text-rendering: optimizeLegibility;
+      font-variant-ligatures: common-ligatures;
+      font-weight: 400;
+  }
+  
+  /*--------
+  Header
+  ----------*/
+  
+  .header-container {
+      margin-left: 1%;
+      margin-right: 1%;
+  }
+  
+  .sticky-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 98%; /* 100% - (1% + 1%) */
+      align-items: center;
+      padding: 10px 1%;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      z-index: 1000;
+  }
+  
+  .logo img {
+      max-height: 3.125em; /* 50px in em */
+  }
+  
+  .main-menu {
+      mix-blend-mode: difference;
+  }
+  
+  .main-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .main-menu li {
+      margin-left: 5%;
+      text-align: right;
+  }
+  
+  .main-menu a {
+      text-decoration: none;
+      color: var(--white);
+      font-size: 1.1875em; /* 19px in em */
+      transition: color 0.3s ease;
+  }
+  
+  .main-menu a:hover {
+      color: var(--gold);
+      cursor: pointer;
+  }
+  
+  /*--------
+  Section
+  ----------*/
+  
+  section {
+      text-align: center;
+      display: grid;
+      align-content: center;
+      align-items: center;
+  }
+  
+  #hero {
+      height: 100vh;
+      justify-content: center;
+  }
+  
+  .box {
+      text-align: center;
+      height: 90vh;
+      display: grid;
+      align-content: center;
+      align-items: center;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
+  
+  .label {
+      text-transform: uppercase;
+      color: var(--gold);
+      font-size: 1.5625em; /* 25px in em */
+      margin-top: 3%;
+      transition: color 0.3s ease;
+      cursor: pointer;
+  }
+  
+  .label:hover {
+      color: var(--black);
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+  }
+  
+  #chi-siamo,#social {
+      background-color: var(--white);
+      color: var(--black);
+  }
+  
+  #orari,#contatti  {
+      background-color: var(--black);
+      color: var(--white);
+  }
 
-.sticky-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 20px;
-    display: grid;
-    grid-template-columns: 1fr auto; /* Una colonna per il logo, una per il menu */
-    align-items: center;
-    z-index: 1000;
-}
-
-.logo img {
-    max-height: 50px; /* Regola l'altezza massima del logo */
-}
-
-.main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end; /* Allinea i link a destra */
-}
-
-.main-menu li {
-    margin-right: 20px;
-}
-
-.main-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.main-menu a:hover {
-    color: #ff6600; /* Cambia colore al passaggio del mouse */
-}
-
-/* Stili per le sezioni della pagina */
-section {
-    padding: 50px;
+ .dove {
     text-align: center;
-    background-color: #f5f5f5;
-    margin: 20px 0;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--black);
 }
 
-/* Aggiungi altri stili secondo le tue esigenze */
+.left-text {
+    grid-column: 1;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.right-map {
+height: 90vh;
+}
+
+.social-heading {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 90px;
+    height: auto;
+}
+
+.social-icons img:hover {
+    color: var(--black);
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0 auto;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.left-column p {
+    margin: 0;
+}
+
+.right-column {
+    flex: 1;
+    text-align: left;
+}
+
+.right-column p {
+    margin: 0;
+}
+
+.right-column a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.3s ease;
+        margin-right: 10px;
+}
+
+.right-column a img{
+    width: 20px;
+}
+
+.right-column a:hover {
+    color: var(--white);
+}
+
+/* CSS */
+
+/* Media query per dispositivi con larghezza massima di 600px */
+@media only screen and (max-width: 600px) {
+    .header-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .sticky-header {
+        padding: 10px 2%;
+        grid-template-columns: 1fr;
+    }
+
+    .main-menu ul {
+        justify-content: center;
+    }
+
+    .main-menu li {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        padding: 5% 10%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em; 
+    }
+
+    .label {
+        margin-top: 5%;
+        font-size: 1.2em; 
+    }
+
+    .dove {
+        grid-template-columns: 1fr;
+    }
+
+    .left-text,
+    .right-map {
+        padding: 5%;
+    }
+
+    .right-map {
+        height: auto;
+    }
+
+    .social-icons {
+        flex-direction: column;
+    }
+
+    .social-icons img {
+        margin-bottom: 10px;
+    }
+
+    #hero h1,
+    #chi-siamo h1,
+    #orari h1,
+    #contatti h1,
+    .left-text h1 {
+        line-height: 1.5;
+    }
+}
+
