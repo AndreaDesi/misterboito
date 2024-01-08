@@ -195,7 +195,8 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 0 auto;
 }
 
@@ -260,16 +261,16 @@ footer {
     }
 
     h1 {
-        font-size: 2em; /* Adattamento delle dimensioni del testo per dispositivi mobili */
+        font-size: 2em;
     }
 
     p {
-        font-size: 1em; /* Adattamento delle dimensioni del testo per dispositivi mobili */
+        font-size: 1em; 
     }
 
     .label {
         margin-top: 5%;
-        font-size: 1.2em; /* Adattamento delle dimensioni del testo per dispositivi mobili */
+        font-size: 1.2em; 
     }
 
     .dove {
@@ -293,7 +294,6 @@ footer {
         margin-bottom: 10px;
     }
 
-    /* Aggiunte regole di stile per rendere più leggibile il testo nei paragrafi */
     #hero h1,
     #chi-siamo h1,
     #orari h1,
@@ -303,4 +303,3 @@ footer {
     }
 }
 
-/* Altre regole di stile rimangono invariate per dispositivi con larghezza superiore a 600px */
