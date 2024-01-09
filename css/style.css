@@ -56,7 +56,6 @@ Font
       left: 0;
       width: 98%; /* 100% - (1% + 1%) */
       align-items: center;
-      padding: 10px 1%;
       display: grid;
       grid-template-columns: 1fr 2fr;
       z-index: 1000;
@@ -193,24 +192,16 @@ footer {
 }
 
 .footer-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
     margin: 0 auto;
 }
 
-.left-column {
-    flex: 1;
-}
-
-.left-column p {
-    margin: 0;
-}
-
 .right-column {
-    flex: 1;
-    text-align: left;
+    place-self: end;
 }
 
 .right-column p {
@@ -242,8 +233,7 @@ footer {
     }
 
     .sticky-header {
-        padding: 10px 2%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .main-menu ul {
@@ -257,7 +247,7 @@ footer {
     }
 
     #hero img {
-        width: 50%;
+        width: 400px;
     }
 
     .box {
