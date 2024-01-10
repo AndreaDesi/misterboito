@@ -193,7 +193,7 @@ footer {
 
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
