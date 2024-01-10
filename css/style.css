@@ -4,147 +4,155 @@ Font
 @font-face {
     font-family: 'Gambarino';
     src: url('../webfonts/Gambarino-Regular.woff2');
-  }
-  
-  /*--------
+}
+
+/*--------
   Global
   ----------*/
-  :root {
+:root {
     --black: #212529;
     --gold: #998330;
     --white: #FAFAFA;
-  }
-  
-  ::selection {
-      color: var(--gold);
-      background: var(--black);
-  }
-  
-  h1 {
-      font-weight: 400;
-      line-height: 1.2; /* 60px */
-      font-size: 3.125em; /* 50px in em */
-  }
-  
-  a {
-      text-decoration: none;
-      cursor: pointer;
-  }
-  
-  body {
-      margin: 0;
-      font-family: 'Gambarino', serif;
-      background-color: var(--black);
-      font-optical-sizing: auto;
-      text-rendering: optimizeLegibility;
-      font-variant-ligatures: common-ligatures;
-      font-weight: 400;
-  }
-  
-  /*--------
+}
+
+::selection {
+    color: var(--gold);
+    background: var(--black);
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    /* 60px */
+    font-size: 3.125em;
+    /* 50px in em */
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gambarino', serif;
+    background-color: var(--black);
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    font-weight: 400;
+}
+
+/*--------
   Header
   ----------*/
-  
-  .header-container {
-      margin-left: 1%;
-      margin-right: 1%;
-  }
-  
-  .sticky-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 98%; /* 100% - (1% + 1%) */
-      align-items: center;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      z-index: 1000;
-  }
-  
-  .logo img {
-      max-height: 3.125em; /* 50px in em */
-  }
-  
-  .main-menu {
-      mix-blend-mode: difference;
-  }
-  
-  .main-menu ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: flex-end;
-  }
-  
-  .main-menu li {
-      margin-left: 5%;
-      text-align: right;
-  }
-  
-  .main-menu a {
-      text-decoration: none;
-      color: var(--white);
-      font-size: 1.1875em; /* 19px in em */
-      transition: color 0.3s ease;
-  }
-  
-  .main-menu a:hover {
-      color: var(--gold);
-      cursor: pointer;
-  }
-  
-  /*--------
+
+.header-container {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    /* 100% - (1% + 1%) */
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    z-index: 1000;
+}
+
+.logo img {
+    max-height: 3.125em;
+    /* 50px in em */
+}
+
+.main-menu {
+    mix-blend-mode: difference;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu li {
+    margin-left: 5%;
+    text-align: right;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1875em;
+    /* 19px in em */
+    transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+    color: var(--gold);
+    cursor: pointer;
+}
+
+/*--------
   Section
   ----------*/
-  
-  section {
-      text-align: center;
-      display: grid;
-      align-content: center;
-      align-items: center;
-  }
-  
-  #hero {
-      height: 100vh;
-      justify-content: center;
-  }
-  
-  .box {
-      text-align: center;
-      height: 90vh;
-      display: grid;
-      align-content: center;
-      align-items: center;
-      padding-left: 10%;
-      padding-right: 10%;
-  }
-  
-  .label {
-      text-transform: uppercase;
-      color: var(--gold);
-      font-size: 1.5625em; /* 25px in em */
-      margin-top: 3%;
-      transition: color 0.3s ease;
-      cursor: pointer;
-  }
-  
-  .label:hover {
-      color: var(--black);
 
-  }
-  
-  #chi-siamo,#social {
-      background-color: var(--white);
-      color: var(--black);
-  }
-  
-  #orari,#contatti  {
-      background-color: var(--black);
-      color: var(--white);
-  }
+section {
+    text-align: center;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
 
- .dove {
+#hero {
+    height: 100vh;
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+    height: 90vh;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.label {
+    text-transform: uppercase;
+    color: var(--gold);
+    font-size: 1.5625em;
+    /* 25px in em */
+    margin-top: 3%;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.label:hover {
+    color: var(--black);
+
+}
+
+#chi-siamo,
+#social {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#orari,
+#contatti {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.dove {
     text-align: center;
     height: 90vh;
     display: grid;
@@ -162,7 +170,7 @@ Font
 }
 
 .right-map {
-height: 90vh;
+    height: 90vh;
 }
 
 .social-heading {
@@ -216,7 +224,7 @@ footer {
     margin-right: 10px;
 }
 
-.right-column a img{
+.right-column a img {
     width: 20px;
 }
 
@@ -233,7 +241,16 @@ footer {
     }
 
     .sticky-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 98%;
+        /* 100% - (1% + 1%) */
+        align-items: center;
+        padding: 10px 1%;
+        display: grid;
         grid-template-columns: 1fr 2fr;
+        z-index: 1000;
     }
 
     .main-menu ul {
@@ -257,12 +274,12 @@ footer {
     }
 
     p {
-        font-size: 1em; 
+        font-size: 1em;
     }
 
     .label {
         margin-top: 5%;
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .dove {
@@ -294,4 +311,3 @@ footer {
         line-height: 1.5;
     }
 }
-
