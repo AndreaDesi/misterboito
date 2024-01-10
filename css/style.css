@@ -233,17 +233,15 @@ footer {
     }
 
     .sticky-header {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     .main-menu ul {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .main-menu li {
-        margin-left: 0;
-        text-align: center;
-        margin-bottom: 10px;
+        text-align: right;
     }
 
     #hero img {
