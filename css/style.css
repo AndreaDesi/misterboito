@@ -109,6 +109,7 @@ section {
     display: grid;
     align-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 #hero {
@@ -255,7 +256,7 @@ footer {
     }
 
     .main-menu ul {
-        justify-content: space-evenly;
+        justify-content: end;
     }
 
     .main-menu li {
